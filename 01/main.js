@@ -17,7 +17,7 @@ let percent = totalprice/100;
 let discount = percent*5;
 console.log("Скидка =", discount);
 let newtotalprice = totalprice - discount;
-console.log(newtotalprice);
+console.log("Новая цена =", newtotalprice);
 
 
 
