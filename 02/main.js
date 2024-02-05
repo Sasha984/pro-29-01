@@ -1,7 +1,17 @@
 //Порівняння чисел: За допомогою prompt отримайте два числа від користувача. Використовуючи if, else if, і else, виведіть у консоль, яке з них більше, менше, або вони рівні. Пам'ятайте про різницю між == і ===.
 
+let firstUserNumber = Number(prompt("Choose first number"));
+let secondUserNumber = Number(prompt("Choose second number"));
 
-
+if(firstUserNumber == secondUserNumber){
+console.log("They are identical")
+}
+else if(firstUserNumber>secondUserNumber){
+    console.log(`This is number ${firstUserNumber}`)
+}
+else(secondUserNumber<firstUserNumber){
+    console.log(`This is number ${secondUserNumber}`)
+}
 //Перевірка парності: Запитайте у користувача число за допомогою prompt. Використовуючи оператор % та if-else, визначте, чи є число парним або непарним, і виведіть відповідне повідомлення у консоль.
 
 
