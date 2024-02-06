@@ -4,16 +4,25 @@ let firstUserNumber = Number(prompt("Choose first number"));
 let secondUserNumber = Number(prompt("Choose second number"));
 
 if(firstUserNumber == secondUserNumber){
-console.log("They are identical")
+console.log("Числа одинаковые")
 }
 else if(firstUserNumber>secondUserNumber){
-    console.log(`This is number ${firstUserNumber}`)
+    console.log(`${secondUserNumber} это меньшее число`)
 }
-else(secondUserNumber<firstUserNumber){
-    console.log(`This is number ${secondUserNumber}`)
+else{
+    console.log(`${firstUserNumber} это меньшее число`)
 }
+
 //Перевірка парності: Запитайте у користувача число за допомогою prompt. Використовуючи оператор % та if-else, визначте, чи є число парним або непарним, і виведіть відповідне повідомлення у консоль.
 
+let number = Number(prompt("Выберите парное или непарное число"));
+
+if(number%2 == number%2){
+    console.log(`${number} это парное число`)
+}
+else{
+    console.log(`${number} это непарное число`)
+}
 
 
 //Визначення року народження: Запитайте в користувача його вік за допомогою prompt. Використовуючи отримане значення та поточний рік (ви можете захардкодити поточний рік), виведіть у консоль рік народження користувача.
