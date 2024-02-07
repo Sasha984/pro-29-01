@@ -1,9 +1,9 @@
 //Порівняння чисел: За допомогою prompt отримайте два числа від користувача. Використовуючи if, else if, і else, виведіть у консоль, яке з них більше, менше, або вони рівні. Пам'ятайте про різницю між == і ===.
 
-let firstUserNumber = Number(prompt("Choose first number"));
-let secondUserNumber = Number(prompt("Choose second number"));
+let firstUserNumber = Number(prompt("Выберите первое число для сравнения"));
+let secondUserNumber = Number(prompt("Выберите второе число для сравнения"));
 
-if(firstUserNumber == secondUserNumber){
+if(firstUserNumber === secondUserNumber){
 console.log("Числа одинаковые")
 }
 else if(firstUserNumber>secondUserNumber){
@@ -17,7 +17,7 @@ else{
 
 let number = Number(prompt("Выберите парное или непарное число"));
 
-if(number%2 == 0){
+if(number%2 === 0){
     console.log(`${number} это парное число`)
 }
 else{
@@ -36,6 +36,7 @@ console.log(dateofbirth)
  
 
 let mynumber = Number(prompt("Выберите любое число"));
+
 if(mynumber>5){
     console.log(`${mynumber} слишком большое`)
 }
@@ -49,13 +50,49 @@ console.log(`Вы угадали число!`)
 
 let userMark =  Number(prompt("Какая Ваша оценка от 1 до 10?"));
 
+if(userMark >= 8){
+    console.log(`Отлично!`)
+}
+else if(userMark >= 5 && userMark <= 7){
+    console.log(`Хорошо`)
+}
+else if(userMark >= 3 && userMark <= 4){
+    console.log(`Удовлетварительно`)
+}
+else{
+    console.log(`Неудовлетварительно`)
+}
 
 //Перевірка діапазону: Запитайте у користувача число. Якщо число знаходиться в діапазоні від 1 до 100 включно, виведіть "Число знаходиться в діапазоні". Якщо ні - "Число поза діапазоном".
 
+let usernumber =  Number(prompt("Напишите любое число"));
 
+if(usernumber >= 1 && usernumber <= 100){
+    console.log(`${usernumber} находится в диапазоне`)
+}
+else{
+    console.log(`${usernumber} не находится в диапазоне`)
+}
 
 //Перепишіть використовуючи тернарний оператор
-        
 
+let score = 75;
+result = score > 50 ? console.log(`Прошёл`) : console.log(`Не прошёл`)
+
+let temperature = 30;
+tempResult = temperature > 25 ? console.log(`Горячо`) : console.log(`Прохладно`)
 
 //Створіть програму для перевірки віку та країни проживання користувача з використанням prompt. Користувач має ввести свій вік та країну. Якщо вік більше 18 років і користувач з України, виведіть "Вітаємо, ви маєте право голосу в Україні". В іншому випадку, якщо вік більше 18, але країна не Україна, виведіть "Перевірте правила голосування у вашій країні". Якщо вік менше 18, виведіть "Ви ще занадто молоді для голосування".
+
+let userAge = Number(prompt("Укажите свой возраст"));
+let userCountry = (prompt("Укажите вашу страну"));
+
+if(userAge >= 18 && userCountry == "Украина" || userCountry == "Україна" || userCountry == "Ukrain"){
+    console.log(`Поздравляем, вы имеете право голосовать в Украине!`)
+}
+else if(userAge >= 18){
+    console.log(`Проверьте правила голосования в вашей стране`)
+}
+else{
+    console.log(`Вы ещё слишком молодой для голосования`)
+}
