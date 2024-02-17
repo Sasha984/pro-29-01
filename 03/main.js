@@ -38,36 +38,13 @@ switch (userOperation) {
 
 //За допомогою циклу вивести в консоль всі парні значення числа 20
 
-for (let i = 2; i<=20; i++) {
-    if (i==3) {
-        continue
+for (let i = 2; i<=20; i++){
+    if (i%2==1) {
+        continue;
     }
-    if (i==5) {
-        continue
-    }
-    if (i==7) {
-        continue
-    }
-    if (i==9) {
-        continue
-    }
-    if (i==11) {
-        continue
-    }
-    if (i==13) {
-        continue
-    }
-    if (i==15) {
-        continue
-    }
-    if (i==17) {
-        continue
-    }
-    if (i==19) {
-        continue
-    }
-    console.log(`${i}`)
+    console.log(`${i}`);
 }
+
 
 //Зробити цикл який виводить дані навпаки від більшого до меншог. Наприклад від 10 до 0 (10, 9, 8, 7, 6 ...)
 
