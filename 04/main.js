@@ -116,6 +116,7 @@ shiftOperation()
 //Cтворіть новий массив за допомогою методів розглянутих на уроці в якому видалені всі  значення "Remove"  з масиву  - ["Keep", "Remove", "Keep", "Remove", "Keep", "Keep", "Remove", "Remove"] в результаті повинен бути ось такий новий массив ["Keep", "Keep", "Keep", ...]
 
 let removeAr = ["Keep", "Remove", "Keep", "Remove", "Keep", "Keep", "Remove", "Remove"];
+
 let newReomoveAr = removeAr.fill(`Keep`, 0, 8);
 
 console.log(removeAr)
@@ -124,6 +125,34 @@ console.log(removeAr)
 
 let checkArr = [69, 96, -66, 77, 85, -85, 14, -20, 90, -36];
 
-
+for (let i = 0; i < checkArr.length; i++) {
+      
+    let element = checkArr[i];
+    
+      if (checkArr[i]<0) {
+         checkArr[i]=0
+       }
+       else{
+        checkArr[i]>0
+       }
+     }
+ console.log(checkArr);
+    
 
 //Створити цикл який виводить значення в консоль в такому форматі "Сьогодні ....  у вас такі плани .." для данних використовує два массива let days = ["Понеділок", "Середа", "Неділя"] let plans = ["Урок 03", "Урок 04", "Вихідни"]
+
+let days = ["Понеділок", "Середа", "Неділя"];
+let plans = ["Урок 03", "Урок 04", "Вихідни"];
+
+function dayPlan(dayAr, planAr){
+    if (dayAr.length === planAr.length) {
+        for (let i = 0;  i< dayAr.length; i++) {
+            console.log(`Сьогодні ${dayAr[i]} y вас такі плани ${planAr[i]}`)
+        }
+    }
+    else{
+        console.log(`У вас нет планов`)
+    }
+}
+
+dayPlan(days, plans)
