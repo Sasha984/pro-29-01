@@ -7,20 +7,20 @@ function hiUser(){
     console.log(`Вітаю ${username}`)
 }
 
-function wellcomUser(){
+function wellcomUser(array, callback){
     for(let i = 0; i<array.length; i++){
         hiUser()
     }
 }
-wellcomUser()
+wellcomUser(array, hiUser)
 
 //Стрілкові функції. Перепишіть попередню функцію в стрілкову. Перепишіть стрілкову функцію в звичайну const multiplyValues = (a, b, c) => a * b * c;
 
 hiUser1 = () => {console.log(`Вітаю ${username}`)};
 
-wellcomeUser1 = () => {for(let i = 0; i < array.length; i++) { hiUser1(username[i]);}}; 
+wellcomeUser1 = (array, callback) => {for(let i = 0; i < array.length; i++) { hiUser1(username[i]);}}; 
 
-wellcomeUser1();
+wellcomeUser1(array, hiUser);
 
 
 
