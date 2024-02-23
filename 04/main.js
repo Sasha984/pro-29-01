@@ -45,13 +45,13 @@ console.log(newNumberAr);
 let emptyAr = [];
 let newArray = [1,2,3,4,5];
 
-function pushOperation(){
+function pushOperation(array){
     for(let i = 0; i<newArray.length; i++){
         emptyAr.push(newArray[i])
     }
     console.log(emptyAr)
 }
-pushOperation()
+pushOperation(array)
 
 //Створіть масив і використайте метод pop, щоб видалити останній елемент з масиву.
 
@@ -64,13 +64,13 @@ console.log(popAr)
 
 let secondpopAr = [4,7,2,9,3];
 
-function popOperation(){
+function popOperation(array){
 
         secondpopAr.pop()
 
     console.log(secondpopAr)
 }
-popOperation()
+popOperation(secondpopAr)
 
 //Створіть масив і використайте метод unshift, щоб додати елементи в початок масиву.
 
@@ -86,13 +86,13 @@ console.log(toys)
 
 let productlist = [`milk`, `cabage`, `water`];
 
-function unshiftOperation(){
+function unshiftOperation(array){
 
         productlist.unshift(`cucumbers`)
 
     console.log(productlist)
 }
-unshiftOperation()
+unshiftOperation(productlist)
 
 //Створіть масив і використайте метод shift, щоб видалити перший елемент з масиву.
 
@@ -105,13 +105,13 @@ console.log(books);
 
 let toDoList = [`go out`, `reading`, `eating`];
 
-function shiftOperation(){
+function shiftOperation(array){
 
         toDoList.shift()
 
     console.log(toDoList)
 }
-shiftOperation()
+shiftOperation(toDoList)
 
 //Cтворіть новий массив за допомогою методів розглянутих на уроці в якому видалені всі  значення "Remove"  з масиву  - ["Keep", "Remove", "Keep", "Remove", "Keep", "Keep", "Remove", "Remove"] в результаті повинен бути ось такий новий массив ["Keep", "Keep", "Keep", ...]
 
