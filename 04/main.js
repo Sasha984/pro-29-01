@@ -51,7 +51,7 @@ function pushOperation(array){
     }
     console.log(emptyAr)
 }
-pushOperation(array)
+pushOperation(newArray)
 
 //Створіть масив і використайте метод pop, щоб видалити останній елемент з масиву.
 
