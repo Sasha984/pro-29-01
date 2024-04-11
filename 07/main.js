@@ -72,7 +72,6 @@ console.log(allEl);
 
 let liElement = Array.from(allEl)
     console.log(liElement);
-}
 
 //Створіть на сторінці елемент який вибирається ціми селекторами
 let listItems = document.querySelectorAll('ul.list > li');
