@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="dom.js"></script>
+    <style>
+        form{
+            padding: 50px;
+            width: 500px;
+            background-color: #924bbec6;
+            margin: 0 auto;
+            
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        p{
+            text-align: center;
+            margin-top: 30px;
+            display: none;
+        }
+        #uah,
+        #usd{
+            padding: 10px;
+            margin: 0px 15px 0px 15px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: aquamarine;
+            border: 0;
+            border-radius: 12px;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            padding: 0 1rem;
+            text-align: center;
+            
+            }
+        .course{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+            
+        img{
+            margin-top: 100px;
+            width: 500px;
+        }
+        .divEl{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <p class="course">
+            Курс:
+            1 USD = 40 UAH
+        </p>
+        <div class="wrapper">
+            <input type="number" name="uah" id="uah" placeholder="Введите сумму в UAH">
+
+        <input type="number" name="usd" id="usd" placeholder="Введите сумму в USD">
+
+        <button class="button" role="button">Конвертировать</button>
+        </div>
+         
+        <p id="inuah"></p>
+        <p id="inusd"></p>
+
+    </form>
+
+   <div class="divEl"> <img src="./img/lion.jpg" alt="lion"></div>
+
+</body>
+</html>
