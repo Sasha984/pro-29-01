@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="dom.js"></script>
+    <style>
+       body{
+        display: flex;
+        flex-direction: column;
+       }
+       .image{
+        width: 200px;
+        height: 200px;
+        border: 10px solid palevioletred;
+        float: right;
+        margin-bottom: 200px;
+        }
+       .menuEl{
+       background-color: blueviolet;
+       width: 200px;
+       height: 200px;
+       }
+       .contextmenu{
+        background-color: bisque;
+        font-size: 15px;
+        color: brown;
+        width: 200px;
+        position: absolute;
+        padding: 10px;
+        top: 474px;
+        left: 168px;
+        list-style-type: none;
+        display: none;
+        }
+        .contextmenu li{
+            margin-top: 5px;  
+        }
+        .part{
+            margin-top: 100px;
+            width: 50px;
+            height: 50px;
+            background-color: rosybrown;
+            position: relative;
+        }
+        .list{
+            background-color: crimson;
+            width: 200px;
+            border: 2px solid burlywood;
+            padding: 20px;
+            display: none;
+            list-style-type: none;
+        }
+   </style>
+</head>
+<body>
+    <img class="image" src="img/cat.jpg" alt="cat">
+
+
+<div>
+    <div class="position">
+        <div class="menuEl"></div></div>
+        <ul class="contextmenu">
+            <li>Вирівняти по центру</li>
+            <li>Вирівняти по правому краю</li>
+            <li>Вирівняти по лівому краю</li>
+            <li>Приховати елемент</li>
+        </ul>
+    
+
+
+        <div class="part"></div>
+
+
+        
+        <ul class="list">
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+            <li>Menu 5</li>
+        </ul>
+    
+</body>
+</html>
