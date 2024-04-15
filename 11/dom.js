@@ -3,25 +3,25 @@ window.onload = function(){
     //Мета: Створити простий конвертер валют, який перетворює введені користувачем гроші з однієї валюти в іншу.
     
     let myForm = document.querySelector('form');
-    let uah = document.querySelector('#uah');
     let usd = document.querySelector('#usd');
+    let uah = document.querySelector('#uah');
     let change = document.querySelector('#change');
-    let pUAH = document.querySelector('#inuah');
-    let pUSD = document.querySelector('#inusd');
+    let UAH = document.querySelector('#inuah');
+    let USD = document.querySelector('#inusd');
 
-    myForm.addEventListener('submit', function(event){  
-    event.preventDefault();
-    let uahValue = event.target['uah'].value;
-    let usdValue = event.target['usd'].value;
+    myForm.addEventListener('submit', function(e){  
+    e.preventDefault();
+    let uahValue = e.target['uah'].value;
+    let usdValue = e.target['usd'].value;
     if(uahValue!=0 && usdValue.length ==0 && uahValue>0 ){
-        pUAH.innerHTML= 'Это будет'+uahValue/40 +'USD';
-        pUAH.style.display = 'inherit';
-        pUSD.style.display = 'none';
+        UAH.innerHTML= 'Это '+uahValue/40 +'USD';
+        UAH.style.display = 'inherit';
+        USD.style.display = 'none';
     }
     else if (usdValue!=0 && uahValue.length ==0 && usdValue>0){
-        pUSD.innerHTML= 'Это будет '+usdValue*40 +'UAH';
-        pUSD.style.display = 'inherit';
-        pUAH.style.display = 'none';
+        USD.innerHTML= 'Это '+usdValue*40 +'UAH';
+        USD.style.display = 'inherit';
+        UAH.style.display = 'none';
     }
     else{
         alert('Введите или USD, или UAH');
