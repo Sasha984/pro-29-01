@@ -5,9 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="dom.js"></script>
-    <style></style>
+    <style>
+body{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hobbyForm{
+            width:300px;
+            height: 100px;
+            background-color: rgb(68, 177, 68);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .infoText{
+            width: 250px;
+            height: 70px;
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
+    <div>
+        <form class="colorForm" action="">
+            <label for="blue">Blue</label>
+            <input type="radio" id="blue" name="option">
+            <label for="pink">Pink</label>
+            <input type="radio" id="pink" name="option">
+            <label for="grey">Grey</label>
+            <input type="radio" id="grey" name="option">
+        </form>
+    </div>
+
+
+    <form class="hobbyForm" action="">
+        <label for="drawing">Drawing</label>
+        <input type="checkbox" id="drawing" name="hobby">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="reading" name="hobby">
+        <label for="volleyball">Volleyball</label>
+        <input type="checkbox" id="volleyball" name="hobby">
+    </form>
+    <p>
+        <ul id="list"></ul>
+    </p>
+
+
+
+
+    <form action="">    
+        <select name="country" id="">
+            <option value="1">Choose country</option>
+            <option value="2">Norway</option>
+            <option value="3">India</option>
+            <option value="4">Poland</option>
+        </select>
+    </form>
     
+        <p class="infoText"></p>
+
 </body>
 </html>
