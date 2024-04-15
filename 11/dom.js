@@ -14,12 +14,12 @@ window.onload = function(){
     let uahValue = e.target['uah'].value;
     let usdValue = e.target['usd'].value;
     if(uahValue!=0 && usdValue.length ==0 && uahValue>0 ){
-        UAH.innerHTML= 'Это '+uahValue/40 +'USD';
+        UAH.innerHTML= `Это ${+uahValue/40} USD`;
         UAH.style.display = 'inherit';
         USD.style.display = 'none';
     }
     else if (usdValue!=0 && uahValue.length ==0 && usdValue>0){
-        USD.innerHTML= 'Это '+usdValue*40 +'UAH';
+        USD.innerHTML= `Это ${+uahValue*40}vUAH`;
         USD.style.display = 'inherit';
         UAH.style.display = 'none';
     }
